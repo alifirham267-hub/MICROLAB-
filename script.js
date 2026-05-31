@@ -269,7 +269,7 @@ const DEVICES = [
     kind: "sensor",
     tag: "Gas/Asap",
     accent: "#1e40af",
-    image: "POTO/MQ2.jpg",
+    image: "POTO/mq2.jpg",
     function: "Mendeteksi gas (LPG, propana, methane) dan asap di udara.",
     howItWorks:
       "Elemen sensor (tin dioxide) dipanaskan heater ~3-5V. Konsentrasi gas mengubah resistansi → output analog (AO) atau threshold digital (DO). Butuh warm-up ~30 detik.",
@@ -282,7 +282,7 @@ const DEVICES = [
     kind: "aktuator",
     tag: "PWM • Posisi",
     accent: "#2563eb",
-    image: "POTO/SERVO.WEBP",
+    image: "POTO/SERVO.webp",
     function: "Menggerakkan poros pada sudut tertentu (0–180° atau 0–270° tergantipe).",
     howItWorks:
       "Menerima sinyal PWM ~50Hz pada pin signal. Pulse width menentukan sudut: 1.0ms = 0°, 1.5ms = 90°, 2.0ms = 180°. Pakai library Servo.h / servo.attach().",
@@ -308,7 +308,7 @@ const DEVICES = [
     kind: "aktuator",
     tag: "Audio",
     accent: "#3b82f6",
-    image: "POTO/BUZ.WEBP",
+    image: "POTO/BUZ.webp",
     function: "Menghasilkan bunyi untuk indikator atau alarm.",
     howItWorks:
       "Buzzer aktif (built-in oscillator): cukup diberi HIGH/LOW. Buzzer pasif: butuh PWM untuk nada. Tipe aktif lebih mudah; tipe pasif lebih fleksibel nada.",
@@ -321,7 +321,7 @@ const DEVICES = [
     kind: "aktuator",
     tag: "Indikator",
     accent: "#0b2a6b",
-    image: "POTO/LED.WEBP",
+    image: "POTO/LED.webp",
     function: "Menghasilkan cahaya sebagai indikator status atau output visual.",
     howItWorks:
       "LED adalah dioda: anoda (+) ke power, katoda (-) ke GND via resistor pembatas arus (220Ω–1kΩ tergantung tegangan & warna). I_max biasanya 20mA.",
