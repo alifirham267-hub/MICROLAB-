@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MicroLab Interactive</title>
+    <meta
+      name="description"
+      content="Media pembelajaran interaktif vokasional untuk siswa SMK Elektro & Mekatronika: mikrokontroler, sensor, aktuator, pin interaktif, dan simulasi wiring."
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header / Navigasi -->
+    <header class="topbar" role="banner">
+      <a class="brand" href="#beranda" aria-label="MicroLab Interactive - Beranda">
+        <span class="brand__mark" aria-hidden="true">µ</span>
+        <span class="brand__text">
+          <strong>MicroLab</strong> <span>Interactive</span>
+        </span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="nav" class="nav" aria-label="Navigasi utama">
+        <a class="nav__link" href="#beranda" data-route="beranda">Beranda</a>
+        <a class="nav__link" href="#mikrokontroler" data-route="mikrokontroler">Mikrokontroler</a>
+        <a class="nav__link" href="#sensor-aktuator" data-route="sensor-aktuator">Sensor & Aktuator</a>
+        <a class="nav__link" href="#wiring" data-route="wiring">Simulasi Wiring</a>
+      </nav>
+    </header>
+
+    <main class="container" role="main">
+      <!-- Beranda -->
+      <section id="beranda" class="section hero" data-section>
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="badge">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Media Pembelajaran Vokasional • Offline Ready</span>
+            </div>
+            <h1 class="hero__title">MicroLab Interactive</h1>
+            <p class="hero__desc">
+              Website pembelajaran interaktif untuk siswa <strong>SMK Elektro</strong> dan
+              <strong>Mekatronika</strong> dalam mempelajari <em>mikrokontroler</em>,
+              <em>sensor</em>, dan <em>aktuator</em>. Jelajahi board, klik pin penting, dan
+              coba simulasi wiring sederhana.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#mikrokontroler" id="btnMulai">
+                Mulai Belajar
+              </a>
+              <a class="btn btn--ghost" href="#wiring">Coba Simulasi Wiring</a>
+            </div>
+
+            <div class="hero__stats" aria-label="Fitur utama">
+              <div class="stat">
+                <div class="stat__icon" aria-hidden="true">
+                  <!-- icon: chip -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                    <path
+                      d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <rect
+                      x="7"
+                      y="7"
+                      width="10"
+                      height="10"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="stat__value">5</div>
+                  <div class="stat__label">Board populer</div>
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat__icon" aria-hidden="true">
+                  <!-- icon: sensor -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                    <path
+                      d="M12 21a7 7 0 0 0 7-7V9a7 7 0 1 0-14 0v5a7 7 0 0 0 7 7Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M9 10a3 3 0 1 1 6 0v4a3 3 0 1 1-6 0v-4Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="stat__value">9</div>
+                  <div class="stat__label">Sensor & aktuator</div>
+                </div>
+              </div>
+              <div class="stat">
+                <div class="stat__icon" aria-hidden="true">
+                  <!-- icon: wiring -->
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                    <path
+                      d="M7 7h10M7 17h10M7 7v10M17 7v10"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="7" cy="7" r="2" stroke="currentColor" stroke-width="2" />
+                    <circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="stat__value">Sim</div>
+                  <div class="stat__label">Wiring sederhana</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="glow"></div>
+            <div class="mock">
+              <div class="mock__top">
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+                <span class="mock__dot"></span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__card">
+                 <img src="pOTO/ALIF.PNg" class="mock__chip" alt="Chip">
+                  <div class="mock__lines">
+                    <span>Alif Irham Muzzaaki</span>
+                     <span>24050630012</span>
+                       <span>Mekatronika</span>
+                    </div>
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="mock__pins">
+                  <span class="pin"></span><span class="pin"></span><span class="pin"></span
+                  ><span class="pin"></span><span class="pin"></span><span class="pin"></span>
+                </div>
+                <div class="mock__footer">
+                  <span class="mock__pill"></span>
+                  <span class="mock__pill"></span>
+                  <span class="mock__pill"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mikrokontroler -->
+      <section id="mikrokontroler" class="section" data-section>
+        <div class="section__head">
+          <h2>Mikrokontroler</h2>
+          <p>Pilih board, lihat spesifikasi ringkas, lalu klik pin penting untuk penjelasan.</p>
+        </div>
+
+        <div class="grid grid--cards" id="boardCards" aria-label="Daftar board"></div>
+
+        <div class="panel" id="boardPanel" hidden>
+          <div class="panel__media">
+            <img id="boardImage" alt="Gambar board" />
+          </div>
+          <div class="panel__content">
+            <div class="panel__title">
+              <h3 id="boardName">Board</h3>
+              <span class="pill" id="boardTag">Dipilih</span>
+            </div>
+            <div class="panel__meta" id="boardMeta"></div>
+
+            <div class="divider"></div>
+
+            <h4>Pin Penting (Klik untuk detail)</h4>
+            <div class="pin-grid" id="pinGrid" aria-label="Pin penting"></div>
+
+            <p class="hint">
+              Tips: Pin analog biasanya berawalan <strong>A</strong>, sedangkan pin digital
+              umumnya <strong>D</strong> / <strong>GPIO</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sensor & Aktuator -->
+      <section id="sensor-aktuator" class="section" data-section>
+        <div class="section__head">
+          <h2>Sensor & Aktuator</h2>
+          <p>Klik card untuk melihat gambar, fungsi, cara kerja singkat, dan kegunaan proyek.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search">
+            <label class="sr-only" for="deviceSearch">Cari sensor/aktuator</label>
+            <input
+              id="deviceSearch"
+              class="input"
+              type="search"
+              placeholder="Cari: DHT11, Servo, Relay, LED..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="chips" role="group" aria-label="Filter kategori">
+            <button class="chip is-active" data-filter="all" type="button">Semua</button>
+            <button class="chip" data-filter="sensor" type="button">Sensor</button>
+            <button class="chip" data-filter="aktuator" type="button">Aktuator</button>
+          </div>
+        </div>
+
+        <div class="grid grid--cards" id="deviceCards" aria-label="Daftar sensor dan aktuator"></div>
+      </section>
+
+      <!-- Simulasi Wiring -->
+      <section id="wiring" class="section" data-section>
+        <div class="section__head">
+          <h2>Simulasi Wiring (Sederhana)</h2>
+          <p>
+            Pilih mikrokontroler dan sensor/aktuator untuk melihat contoh koneksi pin yang benar.
+            Semua mapping disimpan dalam array JavaScript (offline).
+          </p>
+        </div>
+
+        <div class="wiring">
+          <div class="wiring__controls">
+            <div class="field">
+              <label for="selectBoard">Mikrokontroler</label>
+              <select id="selectBoard" class="select"></select>
+            </div>
+            <div class="field">
+              <label for="selectDevice">Sensor / Aktuator</label>
+              <select id="selectDevice" class="select"></select>
+            </div>
+            <div class="note">
+              <strong>Catatan:</strong> Ini adalah simulasi koneksi contoh (bukan simulasi arus
+              listrik). Cocok untuk latihan membaca datasheet & pinout.
+            </div>
+          </div>
+
+          <div class="wiring__result">
+            <div class="result-head">
+              <div>
+                <h3 id="wiringTitle">Pilih kombinasi untuk melihat wiring</h3>
+                <p class="muted" id="wiringSubtitle">Contoh: ESP32 + DHT11</p>
+              </div>
+              <button class="btn btn--ghost btn--sm" id="btnUseExample" type="button">
+                Gunakan Contoh
+              </button>
+            </div>
+
+            <div class="result-body">
+              <div class="diagram" aria-hidden="true">
+                <div class="diagram__box">
+                  <div class="diagram__title" id="diagBoard">Board</div>
+                  <div class="diagram__pins" id="diagBoardPins"></div>
+                </div>
+                <div class="diagram__lines" id="diagLines"></div>
+                <div class="diagram__box">
+                  <div class="diagram__title" id="diagDevice">Device</div>
+                  <div class="diagram__pins" id="diagDevicePins"></div>
+                </div>
+              </div>
+
+              <div class="table-wrap">
+                <table class="table" aria-label="Tabel koneksi wiring">
+                  <thead>
+                    <tr>
+                      <th>Pin Device</th>
+                      <th>Ke Pin Board</th>
+                      <th>Keterangan</th>
+                    </tr>
+                  </thead>
+                  <tbody id="wiringTable"></tbody>
+                </table>
+                <div class="empty" id="wiringEmpty" hidden>
+                  Belum ada mapping untuk kombinasi ini. Coba kombinasi lain atau gunakan tombol
+                  “Gunakan Contoh”.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div>
+          <strong>MicroLab Interactive</strong>
+          <div class="muted">Media Pembelajaran Vokasional</div>
+        </div>
+        <div class="muted">
+          Dibuat oleh Alif Irham Muzzaaki (24050630012) - Pendidikan Teknik Mekatronika
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal universal (dipakai untuk pin & device) -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__overlay" data-close="true"></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal__close" type="button" aria-label="Tutup" data-close="true">×</button>
+        <div class="modal__head">
+          <h3 id="modalTitle">Detail</h3>
+          <p class="muted" id="modalSubtitle"></p>
+        </div>
+        <div class="modal__body" id="modalBody"></div>
+        <div class="modal__foot" id="modalFoot"></div>
+      </div>
+    </div>
+   <script src="script.js"></script>
+  >
